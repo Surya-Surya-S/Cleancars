@@ -92,7 +92,7 @@ body{
 	height: 18px;
 }
 .header_search{
-    padding: 6px 0 0 71px;
+    padding: 6px 0 0 91px;
 }
 /* header_end */
 
@@ -112,7 +112,7 @@ body{
     margin: 18px auto 18px 0;
 }
 .bannerLeft h2{
-    width: 64%;
+    width: 80%;
     font-size: 40px;
     line-height: 50px;
     color: #060606;
@@ -270,7 +270,7 @@ span{
 /* quality_start */
 .quality{
     background-color: #fff;
-    padding: 80px 0;
+    padding: 80px 0 0 0;
 }
 .qualityTop{
     width: 80%;
@@ -333,7 +333,11 @@ span{
 /* whyChoose_start */
 .whyChoose{
     background-color: #fff;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
+}
+.wc_inner{
+    width: 90%;
+    margin: 0 auto;
 }
 .whyChoose_top{
     width: 80%;
@@ -367,12 +371,18 @@ span{
     margin: 0 auto;
 }
 .whyChoose_inner{
-    width: 300px;
+    width: 260px;
     background-color: #fff;
     box-shadow: 0 6px 20px 4px #f8f8f8;
     overflow: hidden;
     padding: 0 0 24px 0;
     margin: 0 auto;
+}
+.whyChoose_inner.left {
+    margin-left: 0;
+}
+.whyChoose_inner.right {
+    margin-right: 0;
 }
 .choose_top{
     display: flex;
@@ -562,7 +572,7 @@ footer{
     padding: 120px 0 34px 0;
 }
 .footer_inner{
-    width: 80%;
+    width: 90%;
     display: flex;
     margin: 0 auto 64px;
 }
@@ -570,12 +580,16 @@ footer{
     width: 25%;
     text-align: center;
     color: #fff;
+    margin: 0 auto;
+}
+.footer_content.left {
+    margin-left: -54px;
 }
 .footer_top h2{
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px -16px;
 }
 .footer_bottom, .footer_bottom3{
     width: 96%;
@@ -615,14 +629,14 @@ footer{
 }
 .footer_top.active{
     text-align: left;
-    padding: 0 0 0 30px;
+    margin-left: 62px;
 }
 input {
     font-size: 12px;
     padding: 6px 14px 6px 6px;
     text-transform: capitalize;
     outline: none;
-    margin: 0 0 10px 50px;
+    margin: 0 0 10px 15px;
 }
 .subscribe{
     width: 50%;
