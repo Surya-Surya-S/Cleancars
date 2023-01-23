@@ -76,9 +76,10 @@ body{
 .menu ul{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -115px;
 }
 .menu li{
-    margin: 0 0 0 40px;
+    margin: 0 0 0 20px;
 }
 .menu li a{
     font-size: 14px;
@@ -196,8 +197,10 @@ span{
     color: #252525;
 }
 .ourServices_inner{
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 .ourServices_content{
     width: 33.33%;
@@ -205,7 +208,7 @@ span{
     margin: 0 auto;
 }
 .bottom_inner{
-    width: 300px;
+    width: 270px;
     background-color: #fff;
     box-shadow: 0 12px 30px #f7f7f7;
     overflow: hidden;
@@ -575,7 +578,7 @@ footer{
     margin: 0 0 10px 0;
 }
 .footer_bottom, .footer_bottom3{
-    width: 80%;
+    width: 96%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -665,9 +668,9 @@ input {
     padding: 0 0 0 34px;
 }
 .copyWright{
-    width: 36%;
+    width: 50%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 .copyWright a{
     font-size: 12px;
