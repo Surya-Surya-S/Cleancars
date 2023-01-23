@@ -63,8 +63,7 @@ body{
     width: 40%;
 }
 .logo{
-    width: 150px; overflow: hidden;
-	
+    width: 150px;
 }
 .logo img{
     width: 100%;
@@ -108,11 +107,11 @@ body{
     margin: 0 auto;
 }
 .bannerLeft{
-    width: 40%;
+    width: 50%;
     margin: 18px auto 18px 0;
 }
 .bannerLeft h2{
-    width: 80%;
+    width: 64%;
     font-size: 40px;
     line-height: 50px;
     color: #060606;
@@ -154,7 +153,8 @@ body{
     background-color: #0c426e;
 }
 .bannerRight{
-    width: 50%; overflow: hidden;
+    width: 50%;
+    overflow: hidden;
 }
 .car_img{
     width: 500px;
@@ -205,12 +205,18 @@ span{
     margin: 0 auto;
 }
 .bottom_inner{
-    width: 350px;
+    width: 300px;
     background-color: #fff;
     box-shadow: 0 12px 30px #f7f7f7;
     overflow: hidden;
     padding: 0 0 24px 0;
     margin: 0 auto;
+}
+.bottom_inner.left {
+    margin-left: 0;
+}
+.bottom_inner.right {
+    margin-right: 0;
 }
 .content_img{
     width: 428px;
@@ -628,9 +634,10 @@ input {
     color: #fff;
 }
 .social_link{
-    width: 12%;
+    width: 16%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0 auto 90px;
 }
 .fb{
