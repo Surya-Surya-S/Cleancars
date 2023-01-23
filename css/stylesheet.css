@@ -54,6 +54,11 @@ body{
     background-color: #0c426e;
     padding: 36px 0;
 }
+.header_inner{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
 .header_left{
     width: 40%;
 }
@@ -87,7 +92,7 @@ body{
 	height: 18px;
 }
 .header_search{
-    padding: 6px 110px 0 42px;
+    padding: 6px 24px 0 47px;
 }
 /* header_end */
 
@@ -97,8 +102,10 @@ body{
     padding: 114px 0;
 }
 .banner .container{
+    width: 86%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 .bannerLeft{
     width: 50%;
