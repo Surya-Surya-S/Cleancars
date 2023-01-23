@@ -154,11 +154,10 @@ body{
 }
 .bannerRight{
     width: 50%;
-    margin-right: -13px;
 }
 .car_img{
     width: 500px;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
 }
 .car_img img{
     width: 100%;
