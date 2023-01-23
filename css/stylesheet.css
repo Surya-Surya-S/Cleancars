@@ -64,7 +64,6 @@ body{
 }
 .logo{
     width: 150px;
-    margin: 0 0 0 46px;
 }
 .logo img{
     width: 100%;
@@ -72,7 +71,7 @@ body{
 .header_right{
     width: 60%;
     display: flex;
-    justify-content: flex-end;
+    margin: 0 auto;
 }
 .menu ul{
     display: flex;
@@ -92,7 +91,7 @@ body{
 	height: 18px;
 }
 .header_search{
-    padding: 6px 24px 0 47px;
+    padding: 6px 0 0 71px;
 }
 /* header_end */
 
@@ -101,25 +100,28 @@ body{
     background-color: #fafafa;
     padding: 114px 0;
 }
-.banner .container{
-    width: 86%;
+.banner_inner{
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 .bannerLeft{
     width: 50%;
-    margin: 18px auto;
+    margin: 18px auto 18px 0;
 }
 .bannerLeft h2{
-    width: 60%;
-    font-size: 50px;
-    line-height: 60px;
+    width: 64%;
+    font-size: 40px;
+    line-height: 50px;
     color: #060606;
     margin: 0 0 16px 0;
 }
 .bannerLeft p{
+    width: 46%;
     font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
     color: #060606;
     margin: 0 0 32px 0;
 }
@@ -152,6 +154,7 @@ body{
 }
 .bannerRight{
     width: 50%;
+    margin-right: -13px;
 }
 .car_img{
     width: 500px;
