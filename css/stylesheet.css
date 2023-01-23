@@ -63,7 +63,8 @@ body{
     width: 40%;
 }
 .logo{
-    width: 150px;
+    width: 150px; overflow: hidden;
+	
 }
 .logo img{
     width: 100%;
