@@ -591,11 +591,20 @@ footer{
     text-transform: capitalize;
     margin: 0 0 10px -16px;
 }
+.footer_content.right .footer_top h2{
+    margin: 0 0 10px -22px;
+}
+.footer_content.right input {
+    margin: 0 0 10px 48px;
+}
 .footer_bottom, .footer_bottom3{
     width: 96%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+}
+.bottom_content {
+    width: 85%;
 }
 .content_footer{
     display: flex;
@@ -621,7 +630,7 @@ footer{
     color: #929292;
 }
 .footer_bottom2{
-    width: 34%;
+    width: 46%;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
@@ -629,7 +638,7 @@ footer{
 }
 .footer_top.active{
     text-align: left;
-    margin-left: 62px;
+    margin-left: 20px;
 }
 input {
     font-size: 12px;
@@ -639,7 +648,7 @@ input {
     margin: 0 0 10px 15px;
 }
 .subscribe{
-    width: 50%;
+    width: 44%;
     background-color: #0c426e;
     padding: 6px 20px;
     display: flex;
