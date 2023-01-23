@@ -108,7 +108,7 @@ body{
     margin: 0 auto;
 }
 .bannerLeft{
-    width: 50%;
+    width: 40%;
     margin: 18px auto 18px 0;
 }
 .bannerLeft h2{
@@ -154,7 +154,7 @@ body{
     background-color: #0c426e;
 }
 .bannerRight{
-    width: 50%;
+    width: 50%; overflow: hidden;
 }
 .car_img{
     width: 500px;
