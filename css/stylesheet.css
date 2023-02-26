@@ -79,12 +79,16 @@ body{
     margin-left: -115px;
 }
 .menu li{
-    margin: 0 0 0 20px;
+    margin: 0 -28px 0 20px;
 }
 .menu li a{
     font-size: 14px;
     text-transform: uppercase;
     color: #fff;
+    padding: 10px;
+}
+.menu li a:hover{
+    background-color: #252525;
 }
 .search{
     background: url("../images/cowsprite.png") no-repeat -109px -103px;
@@ -200,6 +204,7 @@ span{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     margin: 0 auto;
 }
 .ourServices_content{
@@ -337,6 +342,7 @@ span{
 }
 .wc_inner{
     width: 90%;
+    overflow: hidden;
     margin: 0 auto;
 }
 .whyChoose_top{
@@ -601,6 +607,7 @@ footer{
     width: 96%;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     margin: 0 auto;
 }
 .bottom_content {
