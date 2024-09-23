@@ -12,6 +12,7 @@ a{
 .container{
     max-width: 1170px;
     width: 100%;
+    overflow: hidden;
     margin: 0 auto;
 }
 @font-face {
@@ -53,14 +54,15 @@ body{
     flex-wrap: wrap;
     background-color: #0c426e;
     padding: 36px 0;
+    overflow: hidden;
 }
 .header_inner{
-    width: 90%;
     display: flex;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between; 
 }
 .header_left{
-    width: 18%;
+    width: 14%;
 }
 .logo{
     width: 150px;
@@ -69,41 +71,73 @@ body{
     width: 100%;
 }
 .header_right{
-    width: 82%;
-    display: flex;
+    width: 86%;
     margin: 0 auto;
 }
-.menu ul{
+.menu ul, .menu_list{
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     margin-left: 0;
 }
 .menu li{
     margin: 0 -28px 0 52px;
 }
 .menu li a{
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
     color: #fff;
-    padding: 10px;
+    padding: 10px 16px;
 }
 .menu li a:hover{
     background-color: #252525;
 }
-.search{
-    background: url("../images/cowsprite.png") no-repeat -109px -103px;
-	width: 18px;
-	height: 18px;
+.menu_list{
+    justify-content: end;
+    padding: 10px 0;
+}
+.menu {
+    width: 76%;
 }
 .header_search{
     margin-left: 180px;
+}
+.responsive_menu{
+    display: none;
+}
+input[type="search"] {
+    padding: 6px 4px 6px 8px;
+    margin: 0;
+}
+.responsive_menu i, .header_search i{
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+@media(max-width: 450px){
+    input[type="search"] {
+        display: none;
+    }   
+    .header{
+        padding: 28px 0;
+    }
+    .responsive_menu i{
+        font-size: 26px;
+    }
+    .header_inner{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .bottom_inner{
+        width: 100%;
+    }
 }
 /* header_end */
 
 /* banner_start */
 .banner{
     background-color: #fafafa;
-    padding: 114px 0;
+    padding: 80px 0;
 }
 .banner_inner{
     width: 90%;
@@ -123,7 +157,7 @@ body{
     margin: 0 0 16px 0;
 }
 .bannerLeft p{
-    width: 46%;
+    width: 50%;
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
@@ -135,22 +169,24 @@ body{
 }
 .left_link{
     background-color: #0c426e;
-    padding: 8px 14px;
+    padding: 10px 14px;
     display: flex;
     margin: 0 14px 0 0;
 }
 .left_link a{
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     text-transform: capitalize;
     color: #fff;
 }
 .right_link{
     background-color: #252525;
-    padding: 8px 14px;
+    padding: 10px 14px;
     display: flex;
 }
 .right_link a{
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     text-transform: capitalize;
     color: #fff;
 }
@@ -172,16 +208,18 @@ body{
 
 /* ourServices_start */
 .ourServices{
-    background-color: #fff;
-    padding: 100px  30px 0;
+    background-color: #e9e9e9;
+    overflow: hidden;
+    padding: 70px  30px;
 }
 .ourServices_top{
     width: 80%;
     text-align: center;
-    margin: 0 auto 82px;
+    margin: 0 auto 62px;
 }
 .ourServices_top h2{
     font-size: 28px;
+    text-align: center;
     text-transform: capitalize;
     color: #0c426e;
     position: relative;
@@ -190,7 +228,7 @@ body{
     content: " ";
     width: 50px;
     height: 6px;
-    top: 85%;
+    top: 90%;
     right: 50%;
     transform: translate(50%,50%);
     position: absolute;
@@ -209,41 +247,45 @@ span{
     margin: 0 auto;
 }
 .ourServices_content{
-    width: 33.33%;
+    width: 33.333333%;
     text-align: center;
     margin: 0 auto;
 }
 .bottom_inner{
-    width: 300px;
+    width: 325px;
     background-color: #fff;
-    box-shadow: 0 4px 10px #f1f1f1;
     overflow: hidden;
     padding: 0 0 24px 0;
     margin: 0 auto;
 }
+.bottom_inner:hover, .bottom_inner.active{
+    box-shadow: 0 0 10px #bdbdbd;
+}
 .bottom_inner.left {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    background-color: #fff;
 }
 .bottom_inner.right {
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    background-color: #fff;
 }
 .content_img{
-    width: 428px;
+    width: 100%;
     margin: 0 0 14px 0;
+    aspect-ratio: 3 / 2;
+    height: 14em;
 }
 .content_img img{
     width: 100%;
+    height: 100%;
 }
 .content_img.middle{
     width: 398px;
     margin: 0 0 14px 0;
 }
-.content_img.right{
-    width: 373px;
-    margin: 0 0 14px 0;
-}
 .content_para{
     width: 85%;
+    cursor: context-menu;
     margin: 0 auto;
 }
 .content_para h3{
@@ -257,17 +299,22 @@ span{
     line-height: 22px;
     font-weight: 500;
     color: #252525;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 .para_link{
-    width: 95px;
+    width: 105px;
     background-color: #252525;
     display: flex;
+    cursor: pointer;
     padding: 10px 24px;
     margin: 0 auto;
 }
+.bottom_inner:hover .para_link, .para_link.active{
+    background-color: #0c426e;
+}
 .para_link a{
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 500;
     text-transform: capitalize;
     color: #fff;
 }
@@ -276,7 +323,7 @@ span{
 /* quality_start */
 #quality{
     background-color: #fff;
-    padding: 80px 0 0 0;
+    padding: 70px 0 0 0;
 }
 .qualityTop{
     width: 80%;
@@ -293,7 +340,7 @@ span{
     content: " ";
     width: 50px;
     height: 6px;
-    top: 85%;
+    top: 90%;
     right: 50%;
     transform: translate(50%,50%);
     position: absolute;
@@ -305,22 +352,22 @@ span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px 0 80px 0;
+    padding: 60px 0;
 }
 .qualityBottom_inner h4{
-    font-size: 16px;
+    font-size: 25px;
     text-align: center;
     text-transform: capitalize;
     color: #fff;
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0;
 }
 .qualityBottom_inner p{
     width: 70%;
-    font-size: 12px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 24px;
     text-align: center;
     color: #252525;
-    margin: 0 auto 80px;
+    margin: 0 auto 40px;
 }
 .quality_link{
     width: 135px;
@@ -329,10 +376,17 @@ span{
     padding: 12px 31px;
     margin: 0 auto;
 }
+.quality_link:hover{
+    background-color: #0c0c0c;
+    cursor: pointer;
+}
 .quality_link a{
     font-size: 12px;
     text-transform: capitalize;
     color: #0b0b0b;
+}
+.quality_link:hover a{
+    color: #fff;
 }
 /* quality_end */
 
@@ -376,6 +430,7 @@ span{
 .choose_content{
     width: 33.33%;
     text-align: center;
+    overflow: hidden;
     margin: 0 auto;
 }
 .whyChoose_inner{
@@ -423,28 +478,16 @@ span{
     font-weight: 500;
     padding: 0 0 0 28px;
 }
-.whyChoose_inner:hover, .choose_content h4:hover, .choose_content:ho{
+.whyChoose_inner:hover{
     background-color: #0c426e;
     color: #fff;
 }
-/* .choose_left:hover{
-    width: 30px;
-    height: 30px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    margin: 0 0 0 22px;
+.whyChoose_inner:hover .choose_left{
+    border-color: #fff;
 }
-.choose_left:hover a{
-    font-size: 14px;
-    font-weight: 700;
+.whyChoose_inner:hover .choose_left a, .whyChoose_inner:hover .choose_right h4{
     color: #fff;
 }
-.choose_right h4:hover{
-    font-size: 14px;
-    text-transform: capitalize;
-    color: #fff;
-    padding: 6px 0 0 14px;
-} */
 .whyChoose_inner.active{
     background-color: #0c426e;
     color: #fff;
@@ -472,12 +515,12 @@ span{
 /* testimonial_start */
 #testimonial{
     background-color: #fff;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .testimonial_top{
     width: 80%;
     text-align: center;
-    margin: 0 auto 82px;
+    margin: 0 auto 60px;
 }
 .testimonial_top h2{
     font-size: 28px;
@@ -489,7 +532,7 @@ span{
     content: " ";
     width: 50px;
     height: 6px;
-    top: 85%;
+    top: 90%;
     right: 50%;
     transform: translate(50%,50%);
     position: absolute;
@@ -528,7 +571,8 @@ span{
     margin: 0 auto;
 }
 .testimonial_img{
-    width: 100px;
+    width: 120px;
+    margin-bottom: -6px;
 }
 .testimonial_img img{
     width: 100%;
@@ -577,12 +621,13 @@ span{
 /* footer_start */
 footer{
     background-color: #252525;
-    padding: 120px 0 34px 0;
+    padding: 90px 0 10px 0;
 }
 .footer_inner{
     width: 90%;
     display: flex;
-    margin: 0 auto 64px;
+    margin: 0 auto 34px;
+    overflow: hidden;
 }
 .footer_content{
     width: 25%;
@@ -623,6 +668,11 @@ footer{
 }
 .bottom_content {
     width: 85%;
+}
+@media (min-width: 851px) and (max-width: 991px){
+    .bottom_content {
+        width: 12em;
+    }
 }
 .content_footer{
     display: flex;
@@ -683,7 +733,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 auto 74px;
+    margin: 0 auto 24px;
 }
 .fb{
     background: url("../images/cowsprite.png") no-repeat -111px -291px;
@@ -712,7 +762,7 @@ input {
 .copyWright{
     width: 50%;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto;
 }
 .copyWright a{
     font-size: 12px;
